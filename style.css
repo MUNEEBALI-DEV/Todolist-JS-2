@@ -91,6 +91,7 @@ ul li:hover {
   gap: 10px;
   margin: 0;
   padding: 3px 0;
+  flex-wrap: nowrap;
 }
 
 .lists li p {
@@ -99,7 +100,7 @@ ul li:hover {
 }
 
 .editPara{
-  max-width: 70%;
+  max-width: 100%;
   overflow: hidden;
   white-space: nowrap;
 }
@@ -129,4 +130,14 @@ ul li:hover {
 }
 .saveBtn{
   margin: 0;
+}
+.toDoInput{
+  border: none;
+  outline: none;
+  background: transparent;
+  background-color: rgb(236, 238, 240);
+  height: 1.2rem;
+  width: 100%;
+  border-radius: 3rem;
+  padding: 0rem 1rem;
 }
