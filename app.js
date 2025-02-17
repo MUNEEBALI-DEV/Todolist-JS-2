@@ -12,6 +12,7 @@ function addTaskFunc() {
     inputTask.type="text"
     inputTask.readOnly = true;
     inputTask.classList.add("toDoInput")
+    inputTask.style.backgroundColor="white"
     let closeBtn = document.createElement("i");
     let editBtn = document.createElement("button");
     editBtn.innerText = "Edit";
@@ -49,6 +50,7 @@ function closeBtnFunc(closeBtn) {
 
 function editBtnFunc(editBtn, inputTask,saveBtn) {
   editBtn.addEventListener("click", () => {
+    inputTask.style.backgroundColor="rgb(236, 238, 240)"
     inputTask.readOnly = false;
     inputTask.focus();
     saveBtnFunc(saveBtn,inputTask);
@@ -57,6 +59,7 @@ function editBtnFunc(editBtn, inputTask,saveBtn) {
 
 function saveBtnFunc(saveBtn,inputTask) {
   saveBtn.addEventListener("click",()=>{
+    inputTask.style.backgroundColor="white"
     inputTask.readOnly = true;
 
   })
