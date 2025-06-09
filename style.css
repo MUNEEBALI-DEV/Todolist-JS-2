@@ -142,15 +142,14 @@ ul li:hover {
   padding: 0rem 1rem;
 }
 
-@media (min-width: 550px) {
+@media (min-width: 700px) {
   .toDoList {
     height: 83vh;
-    width: 50%;
     padding: 0rem 10px;
-    margin-block: auto;
+    width: 60vw;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 700px) {
   .toDoList {
     height: 83vh;
     width: 100%;
